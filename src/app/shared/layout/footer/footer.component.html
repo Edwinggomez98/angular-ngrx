@@ -1,0 +1,17 @@
+<footer
+  class="fixed bottom-0 w-full px-10 py-5 bg-gradient-to-t from-exampleBlack to-exampleGray flex gap-10 items-center justify-center text-white"
+>
+  <span>
+    All rights reserved.
+    <a href="https://adigitalab.com/" target="_blank" class="font-bold">
+      &#64;Adigitalab
+    </a>
+  </span>
+  <span class="text-sm font-bold">
+    se han seleccionado
+
+    {{ selectedCountrys$ | async | json }}
+
+    paises
+  </span>
+</footer>

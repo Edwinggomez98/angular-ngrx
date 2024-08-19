@@ -1,0 +1,13 @@
+<section>
+  <app-header></app-header>
+  <div class="flex flex-wrap gap-7 px-20 py-32">
+    <div *ngFor="let country of countryData()" #countrys>
+      <app-card
+        [country]="country"
+        [selectedCountry]="selectedCountryData().includes(country)"
+        (clickCountry)="addAnotherSelectedCountry($event)"
+      ></app-card>
+    </div>
+  </div>
+  <app-footer class="mt-auto"></app-footer>
+</section>
